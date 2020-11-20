@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PizzaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('index');
-})->name("home");
-Route::get('/pizza', function () {
-    return view('pizza');
-})->name("pizza");
+Route::get('/',[PizzaController::class,"index"])->name("home");
+Route::post('/',[PizzaController::class,"insert"])->name("order");
+
+Route::get('/pizza', [PizzaController::class,"pizza"])->name("pizza");
+

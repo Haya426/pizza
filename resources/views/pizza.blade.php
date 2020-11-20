@@ -1,7 +1,7 @@
 @extends("layout.layout")
 @section("content")
 <div class="container">
-        <h1 class="purple-text">Pizza order list</h1>
+        <h1 class="purple-text">MB Lun Htar</h1>
 
         <table class="table table-hover">
                 <thead>
@@ -86,7 +86,7 @@
       </div>
 
       <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-default">Login</button>
+        <button class="btn btn-default">Update</button>
       </div>
     </div>
   </div>
